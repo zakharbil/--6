@@ -1,0 +1,161 @@
+<!DOCTYPE html>>
+<html>
+<head>
+  <title>Адаптивна версія сторінки</title>
+  <style>
+    /* CSS-стилі для розмітки та адаптивності */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      width: 100%;
+      padding: 10px;
+    }
+
+    /* Додаткові CSS-стилі для посилань */
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* Додаткові CSS-стилі для кожної точки перерізу */
+    @media (min-width: 768px) {
+      .column {
+        width: 50%;
+      }
+
+      .links a {
+        width: 48%;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .column {
+        width: 33.33%;
+      }
+
+      .links a {
+        width: 31.33%;
+      }
+    }
+
+    /* Додаткові CSS-стилі для мобільних пристроїв */
+    @media (max-width: 480px) {
+      .column {
+        width: 100%;
+      }
+
+      .links a {
+        width: 100%;
+      }
+    }
+
+    /* Приклади стилів для блоків */
+    .block {
+      background-color: #e0e0e0;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    .block h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="column">
+      <div class="block">
+        <h2>Блок 1</h2>
+        <div class="links">
+          <a href="#">Посилання 1</a>
+          <a href="#">Посилання 2</a>
+          <a href="#">Посилання 3</a>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="block">
+        <h2>Блок 2</h2>
+        <div class="links">
+          <a href="#">Посилання 4</a>
+          <a href="#">Посилання 5</a>
+          <a href="#">Посилання 6</a>
+          <a href="#">Посилання 7</a>
+          <a href="#">Посилання 8</a>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="block">
+        <h2>Блок 3</h2>
+        <div class="links">
+          <a href="#">Посилання 9</a>
+          <a href="#">Посилання 10</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<html lang ="en">
+	<head>
+<link href="styles/style.css"
+rel="styesheet"
+type="texr/css"
+		<title>Головна</title>
+        <link rel="stylesheet" href="css.styles.css">
+  <style>
+		header li{list-style: none;}
+    .z{color: orange;}
+    .z:visited{color: red;}
+    .x{color: braun;}
+    .x:visited{color: blue;}
+    .c{color: purple;}
+    .c:visited{color:blueviolet;}
+    .v{color:green;}
+    .v:visited{color: olivedrab;}
+	</style>
+	</head>
+
+<body>
+		<h1> Моя персональна сторінка  </h1>
+		<p> Хай я Захар Петрович.  я навчаюся в Прикарпатському національному університеті імені Василя Стефаника , на першому курсі в групі КН-11
+			
+		.Я пробую вивчати програмування , граю в баскетбол , і люблю ІФ.
+		</p>
+		<header>
+		<a class="z" href="biography.html" target="_blank">Автобіографія</a><br>
+        <a class="x" href="novadays.html" target="_blank">Сьогодення</a><br>
+        <a class="c" href="friends.html" target="_blank">Друзі</a><br>
+        <a class="v" href="gallery.html" target="_blank">Галерея</a><br>
+    </header>
+</body>
+</html>
