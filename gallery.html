@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (min-width: 1024px) { /* desktop */
+      .image-container {
+        justify-content: space-between;
+      }
+
+      .image-container img {
+        width: 30%;
+      }
+    }
+
+    @media (max-width: 1023px) and (min-width: 768px) { /* tablet */
+      .image-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-container img {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width: 767px) { /* mobile */
+      .image-container img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <div>
+      <h2>Зображення у цій папці</h2>
+       <img src="pp/640x480.gif" alt=" Фото 640*480">
+    </div>
+    <div>
+      <h2>Зображення у папці</h2>
+     <img src="https://place-hold.it/1280x1024"  alt=" 'Фото 640*480">
+    </div>
+    <div>
+      <h2>Зображення онлайн</h2>
+       <img src="https://place-hold.it/1280x1024" alt=" Фото 1280*1024">
+    </div>
+  </div>
+</body>
+</html>
 
