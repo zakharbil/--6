@@ -1,43 +1,105 @@
 <!DOCTYPE html>
-
-<html lang ="en">
-	<link href="styles/style.css"
-	<head>
-		<title>Головна</title>
-		<style>
-div li:nth-child(odd){background-color: grey;}
-section li:nth-child(3){cursor:pointer;}
-ol li:nth-child(4){ background-color:rgb(184, 255, 200);}
-section li:nth-child(5){cursor:pointer;}
-a{font-style: italic;}
-h1{text-align:center; font-size: 22px;}
-h2{text-align:center;}
-</style>
-	</head>
-
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Головна</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    div li:nth-child(odd) {
+      background-color: grey;
+    }
+    
+    section li:nth-child(3) {
+      cursor: pointer;
+    }
+    
+    ol li:nth-child(4) {
+      background-color: rgb(184, 255, 200);
+    }
+    
+    section li:nth-child(5) {
+      cursor: pointer;
+    }
+    
+    a {
+      font-style: italic;
+    }
+    
+    h1 {
+      text-align: center;
+      font-size: 22px;
+    }
+    
+    h2 {
+      text-align: center;
+    }
+    
+    /* Стилі для desktop */
+    @media (min-width: 992px) {
+      div {
+        display: flex;
+      }
+      
+      div p {
+        flex: 1;
+        margin-right: 20px;
+      }
+    }
+    
+    /* Стилі для tablet та mobile */
+    @media (max-width: 991px) {
+      div {
+        display: block;
+      }
+      
+      div p {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
 <body>
-/* Загальні стилі */
-<link rel="stylesheet" href="styles/style.css">
-<link rel="stylesheet" href="styles/responsive.css">
+  <h1>Сьогодення Білака Захара Петровича</h1>
+  <a href="index.html">Назад на головну</a>
+  <div>
+    <h2>Мій типовий список покупок</h2>
+    <p>
+      <h4 id="b2">Молочні продукти</h4>
+      <ul>
+        <li>1. Сир</li>
+        <li>2. Молоко</li>
+        <li>3. Сметана</li>
+      </ul>
+    </p>
+    <p>
+      <h4 id="b4">Солодощі</h4>
+      <ul>
+        <li>1. Печиво</li>
+        <li>2. Торт</li>
+        <li>3. Цукерки</li>
+      </ul>
+    </p>
+  </div>
+  <section>
+    <h2>Мій улюблений десерт</h2>
+    <p>
+      <h4 id="b2">Приготування тіста</h4>
+      <ul>
+        <li>1. Додайте до яєць 200 г цукру.</li>
+        <li>2. 5 г ванільного цукру.</li>
+        <li>3. Дрібку солі.</li>
+      </ul>
+    </p>
+    <p>
+      <h4 id="b2">Формування</h4>
+      <ul>
+        <li>1. Форму для випікання 26 см.</li>
+        <li>2. Зробіть «французьку сорочку».</li>
+        <li>3. Змастіть 20 г вершкового масла.</li>
+      </ul>
+    </p>
+  </section>
+</body>
+</html>
 
-header li {
-  list-style: none;
-}
-
-/* Стилі для desktop */
-
-@media (min-width: 992px) {
-  .z, .x {
-    display: inline-block;
-    margin-right: 20px;
-  }
-}
-
-/* Стилі для tablet та mobile */
-
-@media (max-width: 991px) {
-  .z, .x {
-    display: block;
-    margin-bottom: 10px;
-  }
-}
