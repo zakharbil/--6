@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    @media (min-width: 1024px) { /* desktop */
+      th {
+        font-size: 130%;
+      }
+
+      td {
+        font-size: 120%;
+      }
+    }
+
+    @media (max-width: 1023px) and (min-width: 768px) { /* tablet */
+      th {
+        font-size: 120%;
+      }
+
+      td {
+        font-size: 110%;
+      }
+    }
+
+    @media (max-width: 767px) { /* mobile */
+      th {
+        font-size: 110%;
+      }
+    }
+  </style>
+</head>
+<body> 
+  <h1> Мої друзі </h1>
+    <a href="index.html">Назад на головну</a>
+        <h2>Мої друзі</h2>
+<table>
+    <caption>Декілька моїх друзів</caption>
+    <thead>
+    <tr>
+      <th>Прізвище</th>
+        <th>ім'я</th>
+        <th>Дата народження</th>
+    </tr>
+    <tr>
+      <td>Вася </td>
+    <td>Горюк</td>
+    <td>18.03.2000</td>
+    </tr>
+    <tr>
+       <td>Полоз </td>
+    <td>Вадим</td>
+    <td>05.03.2003</td>
+    </tr>
+    <tr>
+      <td>Волошин </td>
+    <td>Артем</td>
+    <td>08.05.2005 </td>
+    </tr>
+  </table>
+</body>
+</html>
 
