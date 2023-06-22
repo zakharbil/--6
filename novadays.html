@@ -1,57 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
+/* Загальні стилі */
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/responsive.css">
 
-    li {
-      margin-bottom: 10px;
-    }
+header li {
+  list-style: none;
+}
 
-    @media (min-width: 768px) { /* desktop */
-      .list-container {
-        display: flex;
-      }
+/* Стилі для desktop */
 
-      .list-container > div {
-        flex: 1;
-        margin-right: 20px;
-      }
-    }
+@media (min-width: 992px) {
+  .z, .x {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
 
-    @media (max-width: 767px) { /* tablet and mobile */
-      .list-container > div {
-        margin-bottom: 20px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="list-container">
-    <div>
-      <h2>Мій типовий список покупок</h2>
-      <ul>
-         
-     <li> 1.Сир </li>
-     <li> 2.Молоко  </li>
-     <li> 3.Сметана  </li>
-     
-      </ul>
-    </div>
-    <div>
-      <h2Мій улюблений десерт</h2>
-      <ul>
-       
-		 <li>1.Додайте до яєць 200 г цукру. <li/>
-		 <li>2.5 г ванільного цукру. <li/>
-		 <li>3. Дрібку солі. <li/>
+/* Стилі для tablet та mobile */
 
-      </ul>
-    </div>
-  </div>
-</body>
-</html>
+@media (max-width: 991px) {
+  .z, .x {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
